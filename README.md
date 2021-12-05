@@ -11,8 +11,10 @@
 
 ## 使用
 
-本工具支持在 Java 8 及以上版本。之前版本无法运行。
-本工具为 maven 插件项目的 LaTeX 文档使用之前请先在主项目的 pom.xml 文件中配置本插件示例如下：
+本工具支持 Java 8 及以上版本。之前版本无法运行。
+本工具为 maven 插件项目的 LaTeX 文档
+使用之前请先在主项目的 pom.xml 文件中配置本插件示例如下：
+
 
     <plugin>
         <groupId>cf.tinkerit.mojo</groupId>
@@ -24,7 +26,7 @@
             <version>1.0</version>
             <authors>
                 <author>
-                    <name>张峰</name>
+                    <name>Bill Gates</name>
                     <email>schnell18@gmail.com</email>
                     <affiliation>Tinker 技术团队</affiliation>
                 </author>
@@ -45,19 +47,19 @@ userContents 是用户手工编写的文档模版。最多可以指定 100 个�
 dubboPattern 及 mapiPattern 分别为 dubbo 接口和网关接口名称的匹配正则表达式，可空。
 excludeTables 是不需要文档生成表的正则表达式，可选。上述例子中以数字或 bak 结尾的表不生成文档。
 
-如果没有完成 schema.sql 文件，那么可以通过直接连接数据库的方式生成数据库文档。配置的示例如下：
+如果没有 schema.sql 文件，那么可以通过直接连接数据库的方式生成数据库文档。配置的示例如下：
 
     <plugin>
         <groupId>cf.tinkerit.mojo</groupId>
         <artifactId>doxgen-maven-plugin</artifactId>
         <version>1.0.0-SNAPSHOT</version>
         <configuration>
-            <title>平安好医生平台开发手册</title>
-            <subTitle>服务元数据系统 dingo</subTitle>
+            <title>Tinker 开发手册</title>
+            <subTitle>元数据系统 dingo</subTitle>
             <version>1.0</version>
             <authors>
                 <author>
-                    <name>张峰</name>
+                    <name>Bill Gates</name>
                     <email>schnell18@gmail.com</email>
                     <affiliation>Tinker 技术团队</affiliation>
                 </author>
@@ -142,11 +144,11 @@ excludeTables 是不需要文档生成表的正则表达式，可选。上述例
 大致步骤如下：
 - 在 Idea 里选择相应的语法文件并打开，本例使用 JavaParser.g4
 - 点击 structure，展示该语法文件的结构
-- 选中一个你需要预览的语法规则，本例中是 compilationUnit
-- 唤起右键菜单，点击第一个，本例中是 Test Rule compilationUnit
-- 唤起右键菜单，点击第一个，本例中是 Test Rule compilationUnit
+- 选中一个你需要预览的语法规则，本例中是 compilationUnit
+- 唤起右键菜单，点击第一个，本例中是 Test Rule compilationUnit
+- 唤起右键菜单，点击第一个，本例中是 Test Rule compilationUnit
 - 在下图的 B 区域输入或选择需要分析的 Java 源代码
-- 语法树将展示在图的 C 区域
+- 语法树将展示在图的 C 区域
 
 ![ANTLR 4 Gramma plugin](images/antlr-idea-plugin.png "ANTLR 4 Ideam 语法树检查工具")
 
